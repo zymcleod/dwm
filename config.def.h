@@ -151,6 +151,8 @@ static const Key keys[] = {
 	{ 0, XF86XK_AudioRaiseVolume, spawn, {.v = up_vol } },
 	{ 0, XF86XK_MonBrightnessDown, spawn, {.v = dimmer } },
 	{ 0, XF86XK_MonBrightnessUp,   spawn, {.v = brighter } },
+	{ 0,         XK_Print, spawn, SHCMD("~/.scripts/screenshot.sh") },
+	{ ShiftMask, XK_Print, spawn, SHCMD("~/.scripts/screenshotsel.sh") },
 };
 
 /* button definitions */
